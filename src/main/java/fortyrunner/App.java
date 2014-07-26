@@ -13,7 +13,7 @@ public class App {
 
     long took = System.currentTimeMillis() - starts;
 
-    LogAsCSV.log(s.length(), took);
+    LogAsCSV.log("String length", s.length(), took);
 
     System.out.println("Now check time-taken.csv");
 

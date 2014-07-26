@@ -11,4 +11,6 @@ We create a LOG4J logger (other logging frameworks are available) that logs to a
 
 You can tweak the Log4J config as much as you like, time and size based roll, different date formats etc
 
-Thats it!
+That's it!
+
+NOTE: This project has been converted to use Log4J 2.x, to use version 1 - simply pull an older version
