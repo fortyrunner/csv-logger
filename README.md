@@ -1,7 +1,7 @@
 csv-logger
 ==========
 
-Demonstrates a stupidly simply technique for creating time logged CSV files.
+Demonstrates a stupidly simple technique for creating time logged CSV files.
 
 How many times have you wanted to do some simple logging of statistics? Do you end up in a mess of OutputStreams exception handling or maybe you end up writing utility classes to do it.
 
