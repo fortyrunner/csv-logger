@@ -1,0 +1,25 @@
+<configuration debug="true">
+
+  <!-- Customise as required, printing thread, file/line, rolling file appenders etc -->
+
+  <appender name="time-taken" class="ch.qos.logback.core.FileAppender">
+    <file>time-taken.csv</file>
+
+    <encoder>
+      <pattern>%date,%msg%n</pattern>
+    </encoder>
+
+  </appender>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="info">
+    <appender-ref ref="time-taken" />
+    <appender-ref ref="STDOUT" />
+  </root>
+
+</configuration>

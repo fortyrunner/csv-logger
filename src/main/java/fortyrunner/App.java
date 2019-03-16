@@ -14,6 +14,7 @@ public class App {
     long took = System.currentTimeMillis() - starts;
 
     LogAsCSV.log("String length", s.length(), took);
+    LogAsCSV.log("Something happened", s.length(), -1);
 
     System.out.println("Now check time-taken.csv");
 
