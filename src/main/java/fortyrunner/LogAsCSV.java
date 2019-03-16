@@ -1,8 +1,8 @@
 package fortyrunner;
 
 import com.google.common.base.Joiner;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Utility class that takes a variable length set of arguments and writes as
@@ -14,7 +14,7 @@ import org.apache.logging.log4j.Logger;
  */
 public final class LogAsCSV {
 
-  private static final Logger LOGGER = LogManager.getLogger("time-taken");
+  private static final Logger LOGGER = LoggerFactory.getLogger("time-taken");
 
   private LogAsCSV(){
 
