@@ -4,8 +4,6 @@ import com.google.common.base.Joiner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.Closeable;
-import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Objects;
@@ -18,7 +16,7 @@ import java.util.Objects;
  * is possible to use Java 8 Strings.join - this is a bit fiddlier though for an
  * object array.
  */
-public final class LogAsCSV implements AutoCloseable {
+public final class LogAsCSV {
 
   private static final Deque<TimedMessage> messageStack = new ArrayDeque<>();
 
@@ -33,10 +31,11 @@ public final class LogAsCSV implements AutoCloseable {
   }
 
 
-  public static void push(final Object... args){
+  public static boolean push(final Object... args){
     String joined = Joiner.on(',').join(args);
     LOGGER.info(joined+",STARTS,0");
     messageStack.push(new TimedMessage(joined));
+    return true;
   }
 
   public static boolean pop(){
@@ -48,10 +47,6 @@ public final class LogAsCSV implements AutoCloseable {
     return true;
   }
 
-  @Override
-  public void close() throws IOException {
-    pop();
-  }
 
   private static class TimedMessage {
     private final String message;

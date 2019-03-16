@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class LogAsCSVTest {
 
   @Test
-  void pop() {
+  public void pop() {
 
     LogAsCSV.push("A,B,C");
     assertTrue(LogAsCSV.pop());
