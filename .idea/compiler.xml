@@ -9,5 +9,8 @@
         <module name="csv-logger" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="csv-logger" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
