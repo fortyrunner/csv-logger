@@ -1,0 +1,8 @@
+
+7squid:S1643"Use a StringBuilder instead.(‚†Ö)8ü»È¹˜-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ð‘§ÿ8»“˜¹˜-
+bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ÇŒÙ¹˜-
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(Éá¤ˆüÿÿÿÿ
+Fsquid:S00108")Either remove or fill this block of code.(ä ¹€8ÇŒÙ¹˜-
